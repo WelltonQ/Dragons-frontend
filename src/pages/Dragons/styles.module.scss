@@ -1,0 +1,215 @@
+.section {
+  padding: 20px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 35px;
+
+  h1 {
+    color: var(--white);
+  }
+
+  button {
+    font-weight: bold;
+    border-radius: 8px;
+    color: var(--white);
+    background: #2b6cb0;
+    border: none;
+    padding: 10px 15px;
+    opacity: 1;
+  }
+
+  button.buttonLogout {
+    background: #e53e3e;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 20px;
+    }
+    button {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section {
+    padding: 0px;
+  }
+}
+
+.headerInput {
+  background: transparent;
+  color: var(--white);
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .headerInput {
+    padding: 7px;
+    width: 50%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: space-around;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.alignCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  color: var(--white);
+  width: 220px;
+  border-radius: 8px;
+}
+
+.alignCards:hover {
+  color: #cc8341;
+}
+
+.description {
+  width: 100%;
+  background-color: #1a202c;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    font-size: 14px;
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.alignButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button.buttonDelete,
+button.buttonEdit {
+  padding: 7px;
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 1;
+  width: 80px;
+}
+
+button.buttonDelete:hover,
+button.buttonEdit:hover {
+  opacity: 0.8;
+}
+
+button.buttonDelete {
+  background-color: #e53e3e;
+}
+
+button.buttonEdit {
+  background-color: #2b6cb0;
+}
+
+.editDragon {
+  width: 100%;
+  max-width: 360px;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  margin: 0 auto;
+
+  label {
+    color: var(--white);
+  }
+
+  input {
+    background: transparent;
+    color: var(--white);
+    margin: 5px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+  }
+
+  button {
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: var(--white);
+    background: #9f7aea;
+    border: none;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+}
+.titleModal {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsDelete {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -40px;
+}
+
+.alignTextsModal p {
+  margin-top: 20px;
+  text-align: center;
+}

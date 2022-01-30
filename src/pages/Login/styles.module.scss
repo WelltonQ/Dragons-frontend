@@ -1,0 +1,45 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    width: 100%;
+    max-width: 360px;
+    padding: 32px;
+    border-radius: 8px;
+    background: #1a202c;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: var(--white);
+    }
+
+    input {
+      background: transparent;
+      color: var(--white);
+      margin: 5px 0 15px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e0;
+      padding: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      font-weight: bold;
+      border-radius: 8px;
+      color: var(--white);
+      background: #9f7aea;
+      border: none;
+      padding: 10px;
+      opacity: 1;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  }
+}
