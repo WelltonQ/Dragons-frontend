@@ -83,6 +83,8 @@ export function Dragons() {
 
   const lowerSearch = search.toLowerCase();
   const namesFiltered = dragons.filter(d => d.name.toLowerCase().includes(lowerSearch));
+
+  // console.log(namesFiltered.map(e => e.name.toLowerCase()).sort())
  
   return( 
     <section className={styles.section}>
@@ -91,7 +93,13 @@ export function Dragons() {
         <button type='button' className={styles.buttonLogout} onClick={logoutUser}>Sair</button>
       </div>
       <div className={styles.header}>
-        <input className={styles.headerInput} type="text" placeholder='Pesquisar' value={search} onChange={(e) => setSearch(e.target.value)}/>
+        <input 
+          className={styles.headerInput} 
+          type="text" 
+          placeholder='Pesquisar' 
+          value={search} 
+          onChange={(e) => setSearch(e.target.value)}
+        />
         <button type='button' onClick={showModalCreate}>Criar Dragão</button>
       </div>
       <div className={styles.card}>
@@ -107,8 +115,20 @@ export function Dragons() {
                   <p>{dragon.histories}</p>
                 </Link>
                 <div className={styles.alignButtons}>
-                  <button className={styles.buttonDelete} onClick={() => showModalDelete(dragon)}>Excluir</button>
-                  <button className={styles.buttonEdit} onClick={() => showModalEdit(dragon)}>Editar</button>
+                  <button 
+                    type='button'
+                    className={styles.buttonDelete} 
+                    onClick={() => showModalDelete(dragon)}
+                  >
+                    Excluir
+                  </button>
+                  <button 
+                    type='button'
+                    className={styles.buttonEdit} 
+                    onClick={() => showModalEdit(dragon)}
+                  >
+                    Editar
+                  </button>
                 </div>
               </div>
             </div>
@@ -144,8 +164,20 @@ export function Dragons() {
               </div>
 
           <div className={styles.buttonsDelete}>
-            <button type="button" className={styles.buttonEdit} onClick={() => setModalDelete(null)}>Cancelar</button>
-            <button type="button" className={styles.buttonDelete} onClick={() => onSubmitDelete(values.id)}>Deletar</button>
+            <button 
+              type="button" 
+              className={styles.buttonEdit} 
+              onClick={() => setModalDelete(null)}
+            >
+              Cancelar
+            </button>
+            <button 
+              type="button" 
+              className={styles.buttonDelete} 
+              onClick={() => onSubmitDelete(values.id)}
+            >
+              Deletar
+            </button>
           </div>      
         </div>
       </Modal>

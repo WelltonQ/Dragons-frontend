@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
+import { AllRoutes } from './routes';
+import './styles/global.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AllRoutes />
   </React.StrictMode>,
   document.getElementById('root')
 );

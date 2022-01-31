@@ -20,8 +20,6 @@ export const AuthProvider = ({children}) => {
     }, [])
 
     const login = (email, password) => {
-        console.log('login', {email, password});
-
         const logged = {
             email,
             password
